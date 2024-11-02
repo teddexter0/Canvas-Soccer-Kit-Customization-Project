@@ -1,22 +1,23 @@
 # Canvas-Soccer-Kit-Customization-Project
 
 ### Purpose
-- Render customizable football kit images on an HTML canvas.
+- Offers a basic 2D kit customization view for shirt and short jersey.
 
 ### Functionality
-- Accepts hex code parameters for:
+- Accepts select hex code parameters for:
   - Primary shirt color
-  - Secondary shirt color
-  - Shorts color
+  - Secondary shirt color (for short and different shirt styling)
+    
 - Supports styles:
   - Plain
-  - Striped
+  - Stripes
   - Hoops
   - Sash
-  - Half-and-Half
+  - Half-and-Half (halves)
 
 ### Display
 - Clear, small canvas with a thin border for optimal visibility.
+- Docile gradient background shiny transition
 
 ### Code Quality
-- Well-commented, easy to understand and modify.
+- Decently-commented, simple to understand and modify.
