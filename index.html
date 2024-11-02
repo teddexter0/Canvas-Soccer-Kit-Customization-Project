@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit Customizer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <div class="container">
+    <canvas id="shirt" width="300px" height="300px" style="border: solid black 2px;"></canvas>
+    <canvas id="short" width="300px" height="300px" style="border: solid black 2px;"></canvas>
+  
+  </div>
+
+  <div class="C2">
+      <!--Primary color--> 
+    <!-- Primary Color Selection -->
+    <div class="dropdown">
+      <button class="dropdown-btn">Primary <br> Color</button>
+      <div class="dropdown-content">
+        
+        <label for="primaryColor">Secondary <br> Color:</label>
+        <select id="primaryColor" class="color-select">
+          <option value="#0000ff" selected>Blue</option>
+          <option value="#ff0000">Red</option>
+          <option value="#00ff00">Green</option>
+          <option value="#ffff00">Yellow</option>
+          <option value="#ff00ff">Magenta</option>
+          <option value="#ffa500">Orange</option>
+          <option value="#000000">Black</option>
+          <option value="#ffffff">White</option>
+        </select>  </div>
+    </div>
+  
+    <!--Style button-->
+<div class="dropdown">
+  <button class="dropdown-btn">Kit-Style</button>
+  <div class="dropdown-content">
+      <a href="#Plain" id="plain">Plain</a>
+      <a href="#Stripes" id="stripes">Stripes</a>
+      <a href="#Hoops" id="hoops">Hoops</a>
+      <a href="#Sash" id="sash">Sash</a>
+      <a href="#HalfnHalf" id="halves">HalfnHalf</a>
+  </div>
+</div>
+ 
+<!--Secondary color-->
+<div class="dropdown">
+  <button class="dropdown-btn">Secondary <br> Color</button>
+  <div class="dropdown-content">
+    
+    <label for="secondaryColor">Secondary Color:</label>
+    <select id="secondaryColor" class="color-select">
+      <option value="#ff0000" selected>Red</option>
+      <option value="#0000ff">Blue</option>
+      <option value="#00ff00">Green</option>
+      <option value="#ffff00">Yellow</option>
+      <option value="#ff00ff">Magenta</option>
+      <option value="#ffa500">Orange</option>
+      <option value="#000000">Black</option>
+      <option value="#ffffff">White</option>
+    </select>  </div>
+</div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

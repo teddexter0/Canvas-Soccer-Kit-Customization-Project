@@ -1,0 +1,145 @@
+body {
+  background: linear-gradient(135deg, rgb(153, 144, 141), #c4c3c0);
+  background-size: 400% 400%;
+  animation: shinyGradient 8s ease infinite;
+}
+
+/* Adding a shiny effect with a slow gradient shift */
+@keyframes shinyGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button:hover {
+  background: linear-gradient(to right, #ffa500, #ff4500);
+}
+
+.color-selection-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.color-selection-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.color-select {
+  width: 150px;
+  padding: 30px;
+  margin: 10px 0;
+  border: 1px solid #d80f8b;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #666;
+}
+
+.container {
+  display: flex;                 /* Enable flexbox layout */
+  justify-content: center;       /* Center items horizontally */
+  align-items: flex-start;       /* Align items to the top */
+  position: absolute;            /* Use absolute positioning */
+  top: 0;                        /* Position at the top */
+  left: 50%;                     /* Center horizontally from left */
+  transform: translateX(-50%);  /* Adjust position to truly center it */
+  width: 90%;                    /* Set width to 90% of the viewport */
+  max-width: 800px;             /* Maximum width of the container */
+  height: auto;                  /* Auto height to fit content */
+  margin-top: 30px;             /* Space from the top */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  border-radius: 10px;          /* Optional: rounded corners */
+}
+
+.C2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between; /* Space between buttons */
+  align-items: center;
+  max-width: 75%;
+  margin-top: 20px; /* Adjust as needed */
+  position: relative;
+  top: -20px; /* Moves .C2 above the .container */
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 20%;
+  margin-top: 120px;
+  width: 80%; /* Ensure the dropdown is more responsive */
+}
+
+/* Dropdown button styling */
+.dropdown-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Orange highlighting on hover */
+.dropdown-btn:hover {
+  background-color: #ff9f43;
+  border-radius: 50%;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0; /* Align dropdown content to the right */
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px; /* Smaller padding for better fit */
+  font-size: 14px; /* Slightly smaller font for mobile */
+  text-decoration: none;
+  display: block;
+}
+
+Show the dropdown content on hover
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Add a hover effect to dropdown links */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Active effect for both desktops and mobile */
+.dropdown-btn:active {
+  background-color: #1c6698; /* Darker blue on tap */
+  transform: scale(0.95); /* Slightly shrink the button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .dropdown {
+    margin-left: 10%; /* Less margin on smaller screens */
+  }
+  .dropdown-content {
+    min-width: 120px; /* Smaller width for mobile */
+  }
+}
