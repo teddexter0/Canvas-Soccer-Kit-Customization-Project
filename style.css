@@ -118,7 +118,7 @@ label {
   display: block;
 }
 
-Show the dropdown content on hover
+/* Show the dropdown content on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
